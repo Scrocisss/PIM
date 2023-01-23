@@ -4,7 +4,7 @@ local unicode = require("unicode")
 local filesystem = require("filesystem")
 local serialization = require("serialization")
 local modem = component.modem
-local port = 1414
+local port = 1893
 
 local terminals = {
 	"c5c7f27d-7f62-49a5-8e92-2e23151f0bb1"
