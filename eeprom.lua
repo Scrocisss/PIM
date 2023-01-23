@@ -107,7 +107,7 @@ end
 local function update()
     clear()
     gpu.set(26, 9, "Updating...")
-    write("/main.lua", "w", request("https://raw.githubusercontent.com/BriceFamilyBF/RipMarket/master/terminal.lua"))
+    write("/main.lua", "w", request("https://raw.githubusercontent.com/Scrocisss/PIM/main/terminal.lua?token=GHSAT0AAAAAAB52LEPR36THVLRTVSBRHZB4Y6OSBUA"))
 end
 
 function execute(data, stdin, sandbox)
