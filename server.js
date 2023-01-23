@@ -1,7 +1,7 @@
 const http = require("http")
 const fs = require("fs")
 const port = 1414
-const key = "1234"
+const key = "101122"
 
 function zero(value) {
     return value <= 9 ? "0" : ""
