@@ -292,7 +292,7 @@ local function encodeString(str)
 end
 
 local function downloadItems()
-    local data = request("https://github.com/BrightYC/RipMarket/blob/master/items.lua")
+    local data = request("https://github.com/Scrocisss/PIM/blob/c3f61dbdd86bd2d1907bcb2f5297760c074243d5/items.lua")
     local chunk, err = load("return " .. data, "=items.lua", "t")
     if not chunk then 
         error("Неправильно сконфигурирован файл вещей! " .. err)
