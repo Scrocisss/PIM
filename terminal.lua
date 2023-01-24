@@ -1596,8 +1596,8 @@ end
 set(1,1,"TT-MEM: "..tostring(computer.totalMemory() / 1024).." KB", gpu.getBackground(), 0xc2c2c2)
 while true do
     local signal = {computer.pullSignal(0)}
-    gpu.set(35, 1, "                        ")
-    set(35, 1, "Free Memory: " ..tostring(math.floor(computer.freeMemory() / 1024)) .. " KB", color.blackGray, 0xffc107)
+    gpu.set(1, 2, "                        ")
+    set(1,2, "Free Memory: " ..tostring(math.floor(computer.freeMemory() / 1024)) .. " KB", color.blackGray, 0xffc107)
     if active then
         if signal[1] == "key_down" then
             if focus.write and not (writes[focus.write].input == "" and signal[3] == 8) then
