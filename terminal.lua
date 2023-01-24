@@ -1596,9 +1596,9 @@ end
 
 while true do
     local signal = {computer.pullSignal(0)}
-            gpu.set(50, 1, "                        ")
+            gpu.set(1, 1, "                        ")
         -- gpuSet(2,1,"TT-MEM: "..tostring(computer.totalMemory() / 1024).." KB", gpu.getBackground(), 0xc2c2c2)
-        set(50, 1, "Free Memory: " ..
+        set(1, 1, "Free Memory: " ..
                    tostring(math.floor(computer.freeMemory() / 1024)) .. " KB",
                color.blackGray, 0xffc107)
     if active then
