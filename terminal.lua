@@ -1593,7 +1593,6 @@ elseif version == "modem" then
         error("Невозможно открыть порт " .. port)
     end
 end
-set(1,1,"TT-MEM: "..tostring(computer.totalMemory() / 1024).." KB", gpu.getBackground(), 0xc2c2c2)
 while true do
     local signal = {computer.pullSignal(0)}
     if active then
