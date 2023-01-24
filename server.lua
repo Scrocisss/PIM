@@ -278,8 +278,3 @@ function stop()
 	end
 end
 start ()
-function restart()
-	if stop() then
-		start()
-	end
-end
