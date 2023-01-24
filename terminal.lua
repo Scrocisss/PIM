@@ -163,7 +163,7 @@ local function drawPim()
     end
 end
 local function discord()
-    setColorText(6, 18, "[0x303030]По любым проблемам пишите в Discord: [0x337d11]BriceFamilyBF#8455", color.background)
+    setColorText(nill, 18, "[0x303030]По любым проблемам пишите в Discord: [0x337d11]BriceFamilyBF#8455", color.background)
 end
 
 local function outOfService(reason)
