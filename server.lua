@@ -277,4 +277,9 @@ function stop()
 		return true
 	end
 end
-function start ()
+
+function restart()
+	if stop() then
+		start()
+	end
+end
