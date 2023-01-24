@@ -245,7 +245,17 @@ local function messageHandler(event, _, address, rport, _, data)
 		responseHandler(data, address) 
 	end
 end
-
+function stop()
+	if not ripmarketIsRunning then
+		io.stderr:write("Daemon already stopped!")
+	else
+		ripmarketIsRunning = false
+		modem.close(port)
+		event.ignore("modem_message", messageHandler)
+		print("Daemon is offline...")
+		return true
+	end
+end
 function start()
 	if ripmarketIsRunning then
 		io.stderr:write("Daemon is running!")
@@ -265,16 +275,3 @@ function start()
 		end
 	end
 end
-
-function stop()
-	if not ripmarketIsRunning then
-		io.stderr:write("Daemon already stopped!")
-	else
-		ripmarketIsRunning = false
-		modem.close(port)
-		event.ignore("modem_message", messageHandler)
-		print("Daemon is offline...")
-		return true
-	end
-end
-start()
