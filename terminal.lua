@@ -162,7 +162,7 @@ local function drawPim()
         set(pimGeometry.x, pimGeometry.y + str, pimGeometry[str], color.background, color.pim)
     end
 end
-
+ setColorText(6, 18, "[0x303030]Магазин был создан при поддержке[0x337d1]13_1415926535", color.background)
 local function discord()
     setColorText(6, 18, "[0x303030]По любым проблемам пишите в Discord: [0x337d11]BriceFamilyBF#8455", color.background)
 end
