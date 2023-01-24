@@ -277,4 +277,4 @@ function stop()
 		return true
 	end
 end
-start ()
+function start ()
